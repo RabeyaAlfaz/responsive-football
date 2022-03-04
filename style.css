@@ -1,30 +1,26 @@
-
-body
-{
+body {
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
 }
 
 
 /* navbar styles */
-nav ul
-{
+nav ul {
     display: flex;
     background-color: #2d25ad;
     margin: 0px;
     padding-top: 42px;
 }
-nav ul div
-{
+
+nav ul div {
     padding-bottom: 50px;
 }
-.nav-button
-{
+
+.nav-button {
     margin-left: 450px;
 }
 
-nav ul li
-{
+nav ul li {
     list-style: none;
     color: white;
     margin-right: 36px;
@@ -52,13 +48,12 @@ nav ul li
     color: white;
 }
 
-.header-image
-{
+.header-image {
     transition: transform .1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.header-image:hover
-{
-    transform:scale(1.5);
+
+.header-image:hover {
+    transform: scale(1.5);
 }
 
 
@@ -80,19 +75,6 @@ nav ul li
     width: 330px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* mobile screen Media Query */
 @media only screen and (max-width:480px) {
