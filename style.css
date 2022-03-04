@@ -1,32 +1,85 @@
 
+body
+{
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* navbar styles */
+nav ul
+{
+    display: flex;
+    background-color: #2d25ad;
+    margin: 0px;
+    padding-top: 42px;
+}
+nav ul div
+{
+    padding-bottom: 50px;
+}
+.nav-button
+{
+    margin-left: 450px;
+}
+
+nav ul li
+{
+    list-style: none;
+    color: white;
+    margin-right: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* Header Section Styles */
-.header-grid-container
-{
+.header-grid-container {
     background-color: #2d25ad;
     display: grid;
     grid-template-columns: 485px 565px;
     justify-content: center;
+    padding-bottom: 86px;
+    margin-bottom: 70px;
 }
-.header-button
+
+.header-button {
+    text-decoration: none;
+    background-color: #e02c6d;
+    border: none;
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    color: white;
+}
+
+.header-image
 {
-text-decoration: none;
-background-color:#e02c6d;
-border: none;
-width: 168px;
-height: 44px;
-font-size: 16px;
-color: white;
+    transition: transform .1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header-image:hover
+{
+    transform:scale(1.5);
 }
 
 
 /* main Section styles starts */
-.grid-container {
+.main-grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 330px);
+    grid-template-columns: repeat(3, 360px);
     justify-content: center;
+    row-gap: 27px;
+    column-gap: 30px;
 }
 
+.main-grid-items {
+    padding: 15px;
+    padding-bottom: 33px;
+    background-color: white;
+    border: none;
+    height: 474px;
+    width: 330px;
+
+}
 
 
 
@@ -42,19 +95,27 @@ color: white;
 
 
 /* mobile screen Media Query */
-@media only screen and ( max-width:480px ){
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 330px);
-    justify-content: center;
-}
+@media only screen and (max-width:480px) {
+    .main-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 330px);
+        /* grid-column: 1; */
+        justify-content: center;
+    }
+
+    .header-grid-container {
+        background-color: #2d25ad;
+        display: grid;
+        grid-template-columns: repeat(1, 330px);
+        justify-content: center;
+    }
 }
 
 /* Tablet screen Media Query */
-@media only screen and ( max-width:768px ){
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 330px);
-    justify-content: center;
-}
+@media only screen and (max-width:768px) {
+    .main-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+    }
 }
