@@ -76,6 +76,21 @@ nav ul li {
 
 }
 
+/* Footer style */
+.footer-section{
+    display: grid; 
+    justify-content: center;
+    margin-top: 158px;
+}
+.icon{
+color:gray;
+margin: 10px 35px ;
+}
+.footer-icon{
+    display: grid; 
+    justify-content: center;
+    margin-bottom:50px;
+}
 /* mobile screen Media Query */
 @media only screen and (max-width:480px) {
     .main-grid-container {
