@@ -1,0 +1,60 @@
+
+
+/* Header Section Styles */
+.header-grid-container
+{
+    background-color: #2d25ad;
+    display: grid;
+    grid-template-columns: 485px 565px;
+    justify-content: center;
+}
+.header-button
+{
+text-decoration: none;
+background-color:#e02c6d;
+border: none;
+width: 168px;
+height: 44px;
+font-size: 16px;
+color: white;
+}
+
+
+/* main Section styles starts */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile screen Media Query */
+@media only screen and ( max-width:480px ){
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 330px);
+    justify-content: center;
+}
+}
+
+/* Tablet screen Media Query */
+@media only screen and ( max-width:768px ){
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+}
+}
