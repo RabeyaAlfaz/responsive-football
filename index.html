@@ -6,40 +6,173 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Football</title>
-
-  <!-- style Link connection -->
-  <link rel="stylesheet" href="style.css">
-
   <!-- font Awesome icon kit code -->
   <script src="https://kit.fontawesome.com/82f6e5d81f.js" crossorigin="anonymous"></script>
+  <style>
+    /* Common styles */
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    header,
+    main {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+
+    /* Navigation Bar styles */
+    .nav-bar {
+      justify-content: space-between;
+    }
+
+    .nav-bar,
+    .nav-bar div {
+      display: flex;
+      background-color: turquoise;
+      padding: 20px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .nav-bar div li,
+    button {
+      list-style: none;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+
+    .nav-bar button {
+      width: 100px;
+      height: 40px;
+      padding: 1px;
+      border: 0px solid red;
+      border-radius: 10px;
+    }
+
+    /* Header section starts */
+    .header-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 1px solid red;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(173, 175, 230);
+      padding: 20px;
+    }
+
+    .header-text h1 {
+      font-size: 50px;
+    }
+
+    .header-image img {
+      width: 50%;
+    }
+
+    /* Main Section starts */
+    .main-grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .main-grid-items {
+      padding: 5px;
+    }
+
+    .main-grid-items div img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    /* footer section starts */
+    .footer-section
+    {
+      display: flex;
+      flex-direction: column;
+      background-color:white;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-icon
+    {
+      display: flex;
+    }
+
+    /* Media Query */
+
+    @media screen and (min-width:320px) and (max-width:480px) {
+      .nav-bar
+      {
+        width: 100%;
+      }
+      .nav-bar div li
+      {
+        font-size: 20px;
+        word-wrap: normal;
+      }
+      .header-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 0 auto;
+        row-gap: 10px;
+      }
+
+      .main-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin: 0 auto;
+        row-gap: 10px;
+      }
+      .footer-section
+      {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {
+      .main-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 auto;
+        row-gap: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- navbar html -->
   <nav>
-    <ul>
-      <li>Home</li>
-      <li>Clubs</li>
-      <li>world Cup 2023</li>
-      <li>Upcoming Matches</li>
-      <li>contact</li>
-      <div><button class="nav-button header-button"><i class="fas fa-sign-in-alt"></i> login </button>
+    <ul class="nav-bar">
+      <div>
+        <li>Home</li>
+        <li>Clubs</li>
+        <li>world Cup 2023</li>
+        <li>Upcoming Matches</li>
+        <li>contact</li>
       </div>
+      <button class="nav-button"><i class="fas fa-sign-in-alt"></i> login </button>
     </ul>
   </nav>
 
   <!-- Header sectin starts -->
   <header>
     <section class="header-grid-container">
-      <div>
-        <h1 style="font-size: 64px; color: white;">Conmebol Copa America 2022</h1>
-        <div style="display: flex;">
-          <a href="https://www.google.com"><button class="header-button">watch Live <i
-                class="fas fa-arrow-right"></i></button></a>
+      <div class="header-text">
+        <h1>Conmebol Copa America 2022</h1>
+        <div>
+          <a href="https://www.google.com">
+            <button class="header-button">
+              watch Live
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
       <div class="header-image">
-        <img src="images/banner.png" width="556.01" height="438" alt="">
+        <img src="images/banner.png" alt="">
       </div>
     </section>
   </header>
@@ -49,7 +182,7 @@
     <section class="main-grid-container">
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-1.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-1.png" alt="">
         </div>
         <div>
           <h2>Neymar Jr</h2>
@@ -61,7 +194,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-2.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-2.png" alt="">
         </div>
         <div>
           <h2>Lionel Messi</h2>
@@ -73,7 +206,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-3.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-3.png" alt="">
         </div>
         <div>
           <h2>Cristiano Ronaldo</h2>
@@ -85,7 +218,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-4.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-4.png" alt="">
         </div>
         <div>
           <h2>Paulo Dybala</h2>
@@ -97,7 +230,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-5.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-5.png" alt="">
         </div>
         <div>
           <h2>Mesut Ozil </h2>
@@ -109,7 +242,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-6.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-6.png" alt="">
         </div>
         <div>
           <h2>Mauro Icardi</h2>
@@ -121,7 +254,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-7.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-7.png" alt="">
         </div>
         <div>
           <h2>Di Maria</h2>
@@ -133,7 +266,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-8.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-8.png" alt="">
         </div>
         <div>
           <h2>Kylian Mbappé</h2>
@@ -145,7 +278,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-9.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-9.png" alt="">
         </div>
         <div>
           <h2>Mohamed Salah</h2>
@@ -157,7 +290,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-10.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-10.png" alt="">
         </div>
         <div>
           <h2>Harry Kane</h2>
@@ -169,7 +302,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-11.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-11.png" alt="">
         </div>
         <div>
           <h2>Kevin De Bruyne</h2>
@@ -181,7 +314,7 @@
 
       <div class="main-grid-items">
         <div>
-          <img src="images/players/player-12.png" alt="" height="256px" width="300px">
+          <img src="images/players/player-12.png" alt="">
         </div>
         <div>
           <h2>Philippe Coutinho</h2>
@@ -196,21 +329,20 @@
   <!-- footer html section starts -->
   <footer>
     <section class="footer-section">
-      <div>
-        <img width="482" height="110" src="images/Logo.png" alt="">
-      </div>
-
       <div class="footer-icon">
+        <div>
+          <img width="100%" src="images/Logo.png" alt="">
+        </div>
         <div class="icon">
           <i class="fas fa-camera"></i>
           <i class="fas fa-futbol"></i>
           <i class="fa fa-twitter" aria-hidden="true"></i>
           <i class="fab fa-youtube"></i>
         </div>
-        <small>
-          copyright <i class="fa fa-copyright"></i>2022 Football
-        </small>
       </div>
+      <small>
+        copyright <i class="fa fa-copyright"></i>2022 Football
+      </small>
     </section>
 
   </footer>
